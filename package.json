@@ -1,0 +1,29 @@
+{
+  "name": "@consid/sitevision-dev",
+  "version": "1.0.0",
+  "description": "Local Sitevision development proxy, HTTPS certificate setup and asset deployment",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Consid-Webbteamet/sitevision-dev.git"
+  },
+  "main": "index.js",
+  "bin": {
+    "sitevision-cert": "lib/setup-cert.js",
+    "sitevision-deploy": "lib/deploy-assets.js"
+  },
+  "files": [
+    "index.js",
+    "lib/"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.0"
+  }
+}
